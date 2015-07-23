@@ -648,6 +648,7 @@ ar.push("Morita -Eureka Seven-");
 ar.push("Yukatan Iglasias -Eureka Seven-");
 ar.push("Neal -Eureka Seven-");
 ar.push("Brittany -Eureka Seven-");
+
 if ($.inidb.get("howners", "num_husbandos") == null || $.inidb.get("howners", "num_husbandos") == 0) {
 
     $.inidb.set("howners", "num_husbandos", ar.length);
