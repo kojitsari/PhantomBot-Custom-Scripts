@@ -648,6 +648,15 @@ ar.push("Morita -Eureka Seven-");
 ar.push("Yukatan Iglasias -Eureka Seven-");
 ar.push("Neal -Eureka Seven-");
 ar.push("Brittany -Eureka Seven-");
+ar.push("Producer -The iDOLM@STER-");
+ar.push("Maina Ooizumi -Idol☆Sister-");
+ar.push("Sora -No Game No Life-");
+ar.push("Tet -No Game No Life-");
+ar.push("Former King -No Game No Life-");
+ar.push("Ino Hatsuse -No Game No Life-");
+ar.push("Kimihito Kurusu  Monster Musume no Iru Nichijou");
+ar.push("Yoshifumi Aoki -Kokoro Connect-");
+ar.push("Taichi Yaegashi -Kokoro Connect-");
 
 if ($.inidb.get("howners", "num_husbandos") == null || $.inidb.get("howners", "num_husbandos") == 0) {
 
