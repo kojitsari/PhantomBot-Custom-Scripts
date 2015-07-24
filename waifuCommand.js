@@ -757,6 +757,12 @@ ar.push("Sumisu Monster Musume no Iru Nichijou");
 ar.push("Himeko Inaba -Kokoro Connect-");
 ar.push("Iori Nagase -Kokoro Connect-");
 ar.push("Yui Kiriyama -Kokoro Connect-");
+ar.push("Cthuko -Haiyore! Nyaruko-san-");
+ar.push("Nyaruko -Haiyore! Nyaruko-san-");
+ar.push("Hasuta -Haiyore! Nyaruko-san-");
+ar.push("Luhy Jistone -Haiyore! Nyaruko-san-");
+ar.push("Ghutatan -Haiyore! Nyaruko-san-");
+ar.push("Tamao Kurei -Haiyore! Nyaruko-san-");
 
 if ($.inidb.get("wowners", "num_waifus") == null || $.inidb.get("wowners", "num_waifus") == 0) {
 
