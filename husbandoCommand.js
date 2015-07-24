@@ -5,7 +5,7 @@ $.on('command', function(event) {
     var argsString = event.getArguments().trim();
     var argsString2 = argsString.substring(argsString.indexOf(" ") + 1, argsString.length());
 	var args = event.getArgs()
-	var num_husbandos = parseInt($.inidb.get('husbandos', 'num_husbandos'));
+	var num_husbandos = parseInt($.inidb.get('howners', 'num_husbandos'));
 	var num_owners = parseInt($.inidb.get('howners', 'num_own'));
 	var randomNum = $.randRange(1, num_husbandos);
     var num;
