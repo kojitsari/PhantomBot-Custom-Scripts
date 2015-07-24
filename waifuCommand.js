@@ -240,7 +240,7 @@ ar.push("Elicia Hughes -Fullmetal Alchemist-");
 ar.push("Pinako Rockbell -Fullmetal Alchemist-");
 ar.push("Nina Tucker -Fullmetal Alchemist-");
 ar.push("Maria Ross -Fullmetal Alchemist-");
-ar.push("Rosé Tomas -Fullmetal Alchemist-");
+ar.push("Rose Tomas -Fullmetal Alchemist-");
 ar.push("Kathleen Elle Armstrong -Fullmetal Alchemist-");
 ar.push("Paninya -Fullmetal Alchemist-");
 ar.push("Rin Tohsaka -Fate/Stay Night-");
