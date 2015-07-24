@@ -657,6 +657,7 @@ ar.push("Ino Hatsuse -No Game No Life-");
 ar.push("Kimihito Kurusu  Monster Musume no Iru Nichijou");
 ar.push("Yoshifumi Aoki -Kokoro Connect-");
 ar.push("Taichi Yaegashi -Kokoro Connect-");
+ar.push("Mahiro Yasaka -Haiyore! Nyaruko-san-");
 
 if ($.inidb.get("howners", "num_husbandos") == null || $.inidb.get("howners", "num_husbandos") == 0) {
 
