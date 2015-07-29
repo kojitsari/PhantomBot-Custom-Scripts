@@ -50,11 +50,19 @@ $.on('command', function(event) {
         }
 		
 		var msgc = messageCommand;
-		var filtered1 = msgc.split('-').join('+');
-		var filtered = filtered1.split(' ').join('+');
+		var filtered1 = msgc.split(' -').join('+');
+		var filtered2 = filtered1.split(';').join('+');
+		var filtered3 = filtered2.split('*').join('+');
+		var filtered = filtered3.split(' ').join('+');
 		
 		if (argsString.isEmpty() && test == false) {
 			$.say("@" + $.username.resolve(sender) + ", your husbando is " + messageCommand + "  #" + num + "." + " https://www.google.com/search?tbm=isch&q=" + filtered);
+			$.data = "<div id='line1' >" + $.username.resolve(sender) + "'s new husbando is:</div> <div id='line2'>" + messageCommand + "</div>";
+			$.data2 = $.username.resolve(sender) + "'s new husbando is: " + messageCommand;
+			$.writeToFile("", "web/" + "waifu.html", false);
+			$.writeToFile("", "web/" + "waifu.txt", false);
+			$.writeToFile($.data, "web/" + "waifu.html", true);
+			$.writeToFile($.data2, "web/" + "waifu.txt", true);
 		} else if (!argsString.isEmpty() && test == true){
 			$.say("@" + $.username.resolve(sender) + ", married " + $.inidb.get('husbandos', 'husbando_' + married) + " and is trying to cheat with " + messageCommand);
 			married = null;
@@ -649,15 +657,82 @@ ar.push("Yukatan Iglasias -Eureka Seven-");
 ar.push("Neal -Eureka Seven-");
 ar.push("Brittany -Eureka Seven-");
 ar.push("Producer -The iDOLM@STER-");
-ar.push("Maina Ooizumi -Idol☆Sister-");
+ar.push("Maina Ooizumi -Idol*Sister-");
 ar.push("Sora -No Game No Life-");
 ar.push("Tet -No Game No Life-");
 ar.push("Former King -No Game No Life-");
 ar.push("Ino Hatsuse -No Game No Life-");
-ar.push("Kimihito Kurusu  Monster Musume no Iru Nichijou");
+ar.push("Kimihito Kurusu  -Monster Musume no Iru Nichijou-");
 ar.push("Yoshifumi Aoki -Kokoro Connect-");
 ar.push("Taichi Yaegashi -Kokoro Connect-");
 ar.push("Mahiro Yasaka -Haiyore! Nyaruko-san-");
+ar.push("Tatsuya Shiba -The Irregular at Magic High School-");
+ar.push("Masaki Ichijou -The Irregular at Magic High School-");
+ar.push("Leonhart Saijou -The Irregular at Magic High School-");
+ar.push("Mikihiko Yoshida -The Irregular at Magic High School-");
+ar.push("Katsuto Juumonji -The Irregular at Magic High School-");
+ar.push("Naotsugu Chiba -The Irregular at Magic High School-");
+ar.push("Hanzou Hattori -The Irregular at Magic High School-");
+ar.push("Yakumo Kokonoe -The Irregular at Magic High School-");
+ar.push("Kei Isori -The Irregular at Magic High School-");
+ar.push("Nagate Tanikaze -Knights of Sidonia-");
+ar.push("Norio Kunato -Knights of Sidonia-");
+ar.push("Hiroki Saitou -Knights of Sidonia-");
+ar.push("Ochiai -Knights of Sidonia-");
+ar.push("Kouichi Tsuruuchi -Knights of Sidonia-");
+ar.push("Ichirou Seii  -Knights of Sidonia-");
+ar.push("Momonga -Overlord-");
+ar.push("Sebas Tian -Overlord-");
+ar.push("Touch Me -Overlord-");
+ar.push("Mare Bello Fiore -Overlord-");
+ar.push("Cocytus -Overlord-");
+ar.push("Aura Bella Fiora -Overlord-");
+ar.push("Gazef Stronoff -Overlord-");
+ar.push("Demiurge -Overlord-");
+ar.push("Rentarou Satomi -Black Bullet-");
+ar.push("Kagetane Hiruko -Black Bullet-");
+ar.push("Shouma Nagisawa -Black Bullet-");
+ar.push("Shougen Ikuma -Black Bullet-");
+ar.push("Tamaki Katagiri -Black Bullet-");
+ar.push("Ryuunosuke Akasaka -The Pet Girl of Sakurasou-");
+ar.push("Sorata Kanda -The Pet Girl of Sakurasou-");
+ar.push("Jin Mitaka -The Pet Girl of Sakurasou-");
+ar.push("Sakura Kusakabe -Bokusatsu Tenshi Dokuro-chan-");
+ar.push("Binkan Ichiro -Bokusatsu Tenshi Dokuro-chan-");
+ar.push("Zansu -Bokusatsu Tenshi Dokuro-chan-");
+ar.push("Boogiepop -Boogiepop Phantom-");
+ar.push("Saotome Masami -Boogiepop Phantom-");
+ar.push("Poom Poom  -Boogiepop Phantom-");
+ar.push("Hermes -Kino no Tabi: The Beautiful World-");
+ar.push("Riku -Kino no Tabi: The Beautiful World-");
+ar.push("Shizu -Kino no Tabi: The Beautiful World-");
+ar.push("Livius Orvinus Ifrikia -The World is Still Beautiful-");
+ar.push("Neil -The World is Still Beautiful-");
+ar.push("Bardwin Cecil Ifrikia -The World is Still Beautiful-");
+ar.push("Teteru Remercier -The World is Still Beautiful-");
+ar.push("Bokota -The World is Still Beautiful-");
+ar.push("Dekonsu -The World is Still Beautiful-");
+ar.push("Makoto Niwa -Denpa Onna to Seishun Otoko-");
+ar.push("Ashiro -Denpa Onna to Seishun Otoko-");
+ar.push("Heivia Winchell -Heavy Object-");
+ar.push("Yuuta Iridatsu -Punch Line-");
+ar.push("Chiranosuke -Punch Line-");
+ar.push("Ryuuto Teraoka -Punch Line-");
+ar.push("Ryouta Sakamoto -Btooom!-");
+ar.push("Kousuke Kira -Btooom!-");
+ar.push("Nobutaka Oda -Btooom!-");
+ar.push("Kiyoshi Taira -Btooom!-");
+ar.push("Masashi Miyamoto -Btooom!-");
+ar.push("Masahito Date -Btooom!-");
+ar.push("Souichi Natsume -Btooom!-");
+ar.push("Mitsuo Akechi -Btooom!-");
+ar.push("Jun Satou  -Working!!!-");
+ar.push("Hiroomi Souma -Working!!!-");
+ar.push("Souta Takanashi -Working!!!-");
+ar.push("Hyougo Otoo -Working!!!-");
+ar.push("Youhei Mashiba -Working!!!-");
+ar.push("Kirio Yamada -Working!!!-");
+
 
 if ($.inidb.get("howners", "num_husbandos") == null || $.inidb.get("howners", "num_husbandos") == 0) {
 
